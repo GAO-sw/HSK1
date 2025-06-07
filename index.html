@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HSK1 中文课程</title>
-    <link rel="stylesheet" href="style.css"> <!-- Changed from hsk1_style.css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="main-container">
         <h1>HSK1 中文课程 (Курс китайского языка HSK1)</h1>
 
-        <!-- Lesson 1: 你好 -->
-        <div class="lesson-content">
-            <h2>第一课：你好 (Урок 1: Здравствуйте/Привет)</h2>
+        <!-- Table of Contents -->
+        <div id="hsk1-toc" class="lesson-toc">
+            <span class="toc-item active" data-target="hsk1-lesson-1">第一课：你好</span>
+            <span class="toc-item" data-target="hsk1-lesson-2">第二课：谢谢你</span>
+            <span class="toc-item" data-target="hsk1-lesson-3">第三课：你叫什么名字</span>
+        </div>
 
+        <!-- Lesson 1: 你好 -->
+        <div id="hsk1-lesson-1" class="lesson-content active-content">
+            <h2>第一课：你好 (Урок 1: Здравствуйте/Привет)</h2>
             <div class="lesson-section">
                 <h3>课文 (Тексты)</h3>
-
-                <!-- Text 1 -->
                 <div class="text-block">
                     <h4>课文一 (Текст 1)</h4>
                     <div class="dialogue-entry">
@@ -25,18 +29,14 @@
                             <p class="chinese-text">A: 你好!</p>
                             <p class="pinyin-text">Nǐ hǎo!</p>
                         </div>
-                        <div class="translation-block">
-                            <p class="russian-translation">Привет!</p>
-                        </div>
+                        <div class="translation-block"><p class="russian-translation">Привет!</p></div>
                     </div>
                     <div class="dialogue-entry">
                         <div class="source-language">
                             <p class="chinese-text">B: 你好!</p>
                             <p class="pinyin-text">Nǐ hǎo!</p>
                         </div>
-                        <div class="translation-block">
-                            <p class="russian-translation">Привет!</p>
-                        </div>
+                        <div class="translation-block"><p class="russian-translation">Привет!</p></div>
                     </div>
                     <div class="new-words-simple">
                         <p><strong>生词 (Новые слова):</strong></p>
@@ -44,8 +44,6 @@
                         <p>2. 好 (hǎo) <span class="pos">прил.</span> хороший, хорошо</p>
                     </div>
                 </div>
-
-                <!-- Text 2 -->
                 <div class="text-block">
                     <h4>课文二 (Текст 2)</h4>
                     <div class="dialogue-entry">
@@ -53,18 +51,14 @@
                             <p class="chinese-text">A: 您好!</p>
                             <p class="pinyin-text">Nín hǎo!</p>
                         </div>
-                        <div class="translation-block">
-                            <p class="russian-translation">Здравствуйте!</p>
-                        </div>
+                        <div class="translation-block"><p class="russian-translation">Здравствуйте!</p></div>
                     </div>
                     <div class="dialogue-entry">
                         <div class="source-language">
                             <p class="chinese-text">B: 你们好!</p>
                             <p class="pinyin-text">Nǐmen hǎo!</p>
                         </div>
-                        <div class="translation-block">
-                            <p class="russian-translation">Привет всем! / Здравствуйте все!</p>
-                        </div>
+                        <div class="translation-block"><p class="russian-translation">Привет всем! / Здравствуйте все!</p></div>
                     </div>
                     <div class="new-words-simple">
                         <p><strong>生词 (Новые слова):</strong></p>
@@ -72,8 +66,6 @@
                         <p>4. 你们 (nǐmen) <span class="pos">мест.</span> вы (мн.ч.)</p>
                     </div>
                 </div>
-
-                <!-- Text 3 -->
                 <div class="text-block">
                     <h4>课文三 (Текст 3)</h4>
                     <div class="dialogue-entry">
@@ -81,18 +73,14 @@
                             <p class="chinese-text">A: 对不起!</p>
                             <p class="pinyin-text">Duìbuqǐ!</p>
                         </div>
-                        <div class="translation-block">
-                            <p class="russian-translation">Извините! / Простите!</p>
-                        </div>
+                        <div class="translation-block"><p class="russian-translation">Извините! / Простите!</p></div>
                     </div>
                     <div class="dialogue-entry">
                         <div class="source-language">
                             <p class="chinese-text">B: 没关系!</p>
                             <p class="pinyin-text">Méi guānxi!</p>
                         </div>
-                        <div class="translation-block">
-                            <p class="russian-translation">Ничего страшного! / Неважно!</p>
-                        </div>
+                        <div class="translation-block"><p class="russian-translation">Ничего страшного! / Неважно!</p></div>
                     </div>
                     <div class="new-words-simple">
                         <p><strong>生词 (Новые слова):</strong></p>
@@ -101,111 +89,280 @@
                     </div>
                 </div>
             </div>
-
             <div class="lesson-section">
                 <h3>拼音 (Пиньинь)</h3>
-
-                <!-- Pinyin 1 -->
                 <div class="pinyin-block">
                     <h4>1. 汉语拼音的声母和韵母 (1) <span class="pinyin-subtitle">(Инициали и финали китайского пиньиня (1))</span></h4>
                     <div class="pinyin-table-container">
-                        <div class="pinyin-column">
-                            <h5>声母 (Инициали) (1)</h5>
-                            <ul class="pinyin-list">
-                                <li>b</li><li>p</li><li>m</li><li>f</li>
-                                <li>d</li><li>t</li><li>n</li><li>l</li>
-                                <li>g</li><li>k</li><li>h</li>
-                                <li>j</li><li>q</li><li>x</li>
-                            </ul>
-                        </div>
-                        <div class="pinyin-column">
-                            <h5>韵母 (Финали) (1)</h5>
-                            <ul class="pinyin-list finals-list">
-                                <li>i</li><li>u</li><li>ü</li><li>er</li>
-                                <li>a</li><li>ia</li><li>ua</li>
-                                <li>o</li><li>uo</li>
-                                <li>e</li><li>ie</li><li>üe</li>
-                                <li>ai</li><li>uai</li>
-                                <li>ei</li><li>uei (ui)</li>
-                                <li>ao</li><li>iao</li>
-                            </ul>
-                        </div>
+                        <div class="pinyin-column"><h5>声母 (Инициали) (1)</h5><ul class="pinyin-list"><li>b</li><li>p</li><li>m</li><li>f</li><li>d</li><li>t</li><li>n</li><li>l</li><li>g</li><li>k</li><li>h</li><li>j</li><li>q</li><li>x</li></ul></div>
+                        <div class="pinyin-column"><h5>韵母 (Финали) (1)</h5><ul class="pinyin-list finals-list"><li>i</li><li>u</li><li>ü</li><li>er</li><li>a</li><li>ia</li><li>ua</li><li>o</li><li>uo</li><li>e</li><li>ie</li><li>üe</li><li>ai</li><li>uai</li><li>ei</li><li>uei (ui)</li><li>ao</li><li>iao</li></ul></div>
                     </div>
                 </div>
-
-                <!-- Pinyin 2 -->
                 <div class="pinyin-block">
                     <h4>2. 汉语的声调 (四声) <span class="pinyin-subtitle">(Тоны (Четыре тона))</span></h4>
                     <p>В китайском языке четыре основных тона: первый тон (55), второй тон (35), третий тон (214) и четвёртый тон (51). Тоны в китайском языке служат для различения смысла.</p>
-                    <div class="tones-example">
-                        <p>mā 妈 (мама) - первый тон</p>
-                        <p>má 麻 (конопля) - второй тон</p>
-                        <p>mǎ 马 (лошадь) - третий тон</p>
-                        <p>mà 骂 (ругать) - четвёртый тон</p>
-                    </div>
+                    <div class="tones-example"><p>mā 妈 (мама) - первый тон</p><p>má 麻 (конопля) - второй тон</p><p>mǎ 马 (лошадь) - третий тон</p><p>mà 骂 (ругать) - четвёртый тон</p></div>
                     <p><strong>Прочитайте следующие слоги вслух, обращая внимание на различие тонов:</strong></p>
-                    <ul class="pinyin-list tone-practice">
-                        <li>ā</li><li>á</li><li>ǎ</li><li>à</li>
-                        <li>ō</li><li>ó</li><li>ǒ</li><li>ò</li>
-                        <li>ē</li><li>é</li><li>ě</li><li>è</li>
-                        <li>ī</li><li>í</li><li>ǐ</li><li>ì</li>
-                        <li>ū</li><li>ú</li><li>ǔ</li><li>ù</li>
-                        <li>ǖ</li><li>ǘ</li><li>ǚ</li><li>ǜ</li>
-                    </ul>
+                    <ul class="pinyin-list tone-practice"><li>ā</li><li>á</li><li>ǎ</li><li>à</li><li>ō</li><li>ó</li><li>ǒ</li><li>ò</li><li>ē</li><li>é</li><li>ě</li><li>è</li><li>ī</li><li>í</li><li>ǐ</li><li>ì</li><li>ū</li><li>ú</li><li>ǔ</li><li>ù</li><li>ǖ</li><li>ǘ</li><li>ǚ</li><li>ǜ</li></ul>
                 </div>
-
-                <!-- Pinyin 3 -->
                 <div class="pinyin-block">
                     <h4>3. 汉语的音节 <span class="pinyin-subtitle">(Слоги китайского языка)</span></h4>
                     <p>Слог в китайском языке обычно состоит из трёх частей: инициали, финали и тона. Как правило, один иероглиф соответствует одному слогу. Слог в китайском языке может не иметь инициали, но обязательно должен иметь финаль и тон.</p>
-                    <table class="syllable-table">
-                        <thead>
-                            <tr>
-                                <th>汉语的音节 (Слог)</th>
-                                <th>声母 (Инициаль)</th>
-                                <th>韵母 (Финаль)</th>
-                                <th>声调 (Тон)</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>māo (猫, кот)</td><td>m</td><td>ao</td><td>- (первый)</td></tr>
-                            <tr><td>yú (鱼, рыба)</td><td></td><td>ü</td><td>´ (второй)</td></tr>
-                            <tr><td>jiě (姐, ст. сестра)</td><td>j</td><td>ie</td><td>ˇ (третий)</td></tr>
-                            <tr><td>èr (二, два)</td><td></td><td>er</td><td>` (четвёртый)</td></tr>
-                        </tbody>
-                    </table>
+                    <table class="syllable-table"><thead><tr><th>汉语的音节 (Слог)</th><th>声母 (Инициаль)</th><th>韵母 (Финаль)</th><th>声调 (Тон)</th></tr></thead><tbody><tr><td>māo (猫, кот)</td><td>m</td><td>ao</td><td>- (первый)</td></tr><tr><td>yú (鱼, рыба)</td><td></td><td>ü</td><td>´ (второй)</td></tr><tr><td>jiě (姐, ст. сестра)</td><td>j</td><td>ie</td><td>ˇ (третий)</td></tr><tr><td>èr (二, два)</td><td></td><td>er</td><td>` (четвёртый)</td></tr></tbody></table>
                     <p class="note"><strong>Примечание:</strong> Когда i или ü сами по себе образуют слог, перед финалью добавляется y, а две точки над ü убираются; когда u само по себе образует слог, перед финалью добавляется w.</p>
                 </div>
-
-                <!-- Pinyin 4 -->
                 <div class="pinyin-block">
                     <h4>4. 两个三声音节的连读变调 <span class="pinyin-subtitle">(Изменение тона: 3-й тон + 3-й тон)</span></h4>
                     <p>Когда два слога третьего тона читаются подряд, первый слог изменяется на второй тон, т.е. комбинация 3 + 3 становится 2 + 3. Например, “nǐ (你)” + “hǎo (好)” читается как “ní hǎo”. Однако при записи пиньиня сохраняется первоначальный тон.</p>
-                    <table class="tone-sandhi-table">
+                    <table class="tone-sandhi-table"><tbody><tr><td>nǐ (你)</td><td>+</td><td>hǎo (好)</td><td>→</td><td>ní hǎo</td></tr><tr><td>kě (可)</td><td>+</td><td>yǐ (以)</td><td>→</td><td>ké yǐ</td></tr><tr><td>fǔ (辅)</td><td>+</td><td>dǎo (导)</td><td>→</td><td>fú dǎo</td></tr></tbody></table>
+                </div>
+                <div class="pinyin-block">
+                    <h4>朗读下列词语，注意第三声音节的读音 <span class="pinyin-subtitle">(Прочитайте следующие слова вслух, обращая внимание на изменение тона слогов третьего тона)</span></h4>
+                    <ul class="pinyin-list word-reading-practice"><li>nǐ hǎo</li><li>kěyǐ</li><li>fǔdǎo</li><li>xiǎojiě</li><li>kǒuyǔ</li><li>yǔfǎ</li><li>Fǎyǔ</li><li>tǎohǎo</li><li>liǎojiě</li><li>yǒuhǎo</li><li>yǔsǎn</li><li>shǒubiǎo</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lesson 2: 谢谢你 -->
+        <div id="hsk1-lesson-2" class="lesson-content">
+            <h2>第二课：谢谢你 (Урок 2: Спасибо тебе)</h2>
+            <div class="lesson-section">
+                <h3>课文 (Тексты)</h3>
+                <div class="text-block">
+                    <h4>课文一 (Текст 1)</h4>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">A: 谢谢!</p><p class="pinyin-text">Xièxie!</p></div>
+                        <div class="translation-block"><p class="russian-translation">Спасибо!</p></div>
+                    </div>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">B: 不谢!</p><p class="pinyin-text">Bú xiè!</p></div>
+                        <div class="translation-block"><p class="russian-translation">Пожалуйста! / Не за что!</p></div>
+                    </div>
+                    <div class="new-words-simple">
+                        <p><strong>生词 (Новые слова):</strong></p>
+                        <p>1. 谢谢 (xièxie) <span class="pos">гл.</span> благодарить</p>
+                        <p>2. 不 (bù) <span class="pos">нар.</span> нет, не</p>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h4>课文二 (Текст 2)</h4>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">A: 谢谢你!</p><p class="pinyin-text">Xièxie nǐ!</p></div>
+                        <div class="translation-block"><p class="russian-translation">Спасибо тебе!</p></div>
+                    </div>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">B: 不客气!</p><p class="pinyin-text">Bú kèqi!</p></div>
+                        <div class="translation-block"><p class="russian-translation">Пожалуйста! / Не стоит благодарности!</p></div>
+                    </div>
+                    <div class="new-words-simple">
+                        <p><strong>生词 (Новые слова):</strong></p>
+                        <p>3. 不客气 (bú kèqi) пожалуйста, не стоит благодарности</p>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h4>课文三 (Текст 3)</h4>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">A: 再见!</p><p class="pinyin-text">Zàijiàn!</p></div>
+                        <div class="translation-block"><p class="russian-translation">До свидания!</p></div>
+                    </div>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">B: 再见!</p><p class="pinyin-text">Zàijiàn!</p></div>
+                        <div class="translation-block"><p class="russian-translation">Пока! / До свидания!</p></div>
+                    </div>
+                    <div class="new-words-simple">
+                        <p><strong>生词 (Новые слова):</strong></p>
+                        <p>4. 再见 (zàijiàn) <span class="pos">гл.</span> до свидания, увидимся</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lesson-section">
+                <h3>拼音 (Пиньинь)</h3>
+                <div class="pinyin-block">
+                    <h4>1. 汉语拼音的声母和韵母 (2) <span class="pinyin-subtitle">(Инициали и финали китайского пиньиня (2))</span></h4>
+                    <div class="pinyin-table-container">
+                        <div class="pinyin-column"><h5>声母 (Инициали) (2)</h5><ul class="pinyin-list"><li>zh</li><li>ch</li><li>sh</li><li>r</li><li>z</li><li>c</li><li>s</li></ul></div>
+                        <div class="pinyin-column"><h5>韵母 (Финали) (2)</h5><ul class="pinyin-list finals-list"><li>ou</li><li>iou (iu)</li><li>an</li><li>ian</li><li>uan</li><li>üan</li><li>en</li><li>in</li><li>uen (un)</li><li>ün</li><li>ang</li><li>iang</li><li>uang</li><li>eng</li><li>ing</li><li>ueng</li><li>ong</li><li>iong</li></ul></div>
+                    </div>
+                </div>
+                <div class="pinyin-block">
+                    <h4>2. 汉语的轻声 <span class="pinyin-subtitle">(Нейтральный тон)</span></h4>
+                    <p>Помимо четырёх упомянутых ранее тонов, в китайском языке существует ещё один тон, который читается коротко и легко, и называется «нейтральный тон». Например:</p>
+                    <div class="neutral-tone-examples">
+                        <p>māma 妈妈 (мама)</p>
+                        <p>yéye 爷爷 (дедушка (по отцу))</p>
+                        <p>nǎinai 奶奶 (бабушка (по отцу))</p>
+                        <p>bàba 爸爸 (папа)</p>
+                    </div>
+                    <p><strong>Прочитайте следующие слоги вслух, обращая внимание на произношение нейтрального тона:</strong></p>
+                    <ul class="pinyin-list word-reading-practice"><li>zhuōzi</li><li>fángzi</li><li>yǐzi</li><li>guìzi</li><li>tāmen</li><li>rénmen</li><li>wǒmen</li><li>dìdi</li><li>yīfu</li><li>érzi</li><li>xǐhuan</li><li>rènshi</li><li>xiānsheng</li><li>péngyou</li><li>wǎnshang</li><li>piàoliang</li></ul>
+                </div>
+                <div class="pinyin-block">
+                    <h4>3. 拼音规则 (1): 标调法和省写 <span class="pinyin-subtitle">(Правила Пиньиня (1): Постановка тонов и сокращения)</span></h4>
+                    <h5>(1) 标调法 (Постановка тонов)</h5>
+                    <p>Тоны в китайском пиньине обязательно ставятся над гласными буквами. Если финаль содержит две или более гласные буквы, знак тона ставится над той гласной, при произнесении которой рот открывается шире. Основной порядок гласных для постановки знака тона: a, o, e, i, u, ü. Однако iu является исключением: iu — это сокращённая форма iou, и знак тона ставится над u. Нейтральный тон не обозначается знаком.</p>
+                    <p><strong>Прочитайте следующие слоги вслух, обращая внимание на место постановки знаков тона:</strong></p>
+                    <ul class="pinyin-list word-reading-practice"><li>xuéxiao</li><li>bāngmáng</li><li>lánqiú</li><li>nǚ'ér</li><li>yóuyǒng</li><li>shǒubiǎo</li><li>zhōngyú</li><li>gōngsī</li><li>shíjiān</li><li>shēntǐ</li><li>kǎoshì</li><li>guójia</li><li>bàozhi</li><li>hǎochī</li><li>xièxie</li><li>kèqi</li></ul>
+                    <h5>(2) 省写 (Сокращения)</h5>
+                    <p>Когда перед iou, uei, uen ставится инициаль, они записываются как iu, ui, un соответственно. Например: niu, gui, lun.</p>
+                    <p><strong>Прочитайте следующие слоги вслух, обращая внимание на сокращённые финали:</strong></p>
+                    <ul class="pinyin-list word-reading-practice"><li>xiūxi</li><li>shuǐjiǎo</li><li>lúnchuán</li><li>niúnǎi</li><li>píjiǔ</li><li>dǎgōu</li><li>liúyán</li><li>kāihuì</li><li>tāolùn</li><li>zúqiú</li><li>Lúndūn</li><li>shírùn</li><li>cánkuì</li><li>shuǐguǒ</li><li>tāozui</li><li>shùnlì</li></ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lesson 3: 你叫什么名字 -->
+        <div id="hsk1-lesson-3" class="lesson-content">
+            <h2>第三课：你叫什么名字？ (Урок 3: Как тебя зовут?)</h2>
+            <div class="lesson-section">
+                <h3>课文 (Тексты)</h3>
+                <div class="text-block">
+                    <h4>课文一: 在学校 (Текст 1: В школе)</h4>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">A: 你叫什么名字？</p><p class="pinyin-text">Nǐ jiào shénme míngzi?</p></div>
+                        <div class="translation-block"><p class="russian-translation">Как тебя зовут?</p></div>
+                    </div>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">B: 我叫李月。</p><p class="pinyin-text">Wǒ jiào Lǐ Yuè.</p></div>
+                        <div class="translation-block"><p class="russian-translation">Меня зовут Ли Юэ.</p></div>
+                    </div>
+                    <div class="new-words-simple">
+                        <p><strong>生词 (Новые слова):</strong></p>
+                        <p>1. 叫 (jiào) <span class="pos">гл.</span> звать(ся), называть(ся)</p>
+                        <p>2. 什么 (shénme) <span class="pos">мест.</span> что, какой</p>
+                        <p>3. 名字 (míngzi) <span class="pos">сущ.</span> имя</p>
+                        <p>4. 我 (wǒ) <span class="pos">мест.</span> я, меня</p>
+                        <p><strong>专有名词 (Имена собственные):</strong></p>
+                        <p>1. 李月 (Lǐ Yuè) <span class="pos"></span> Ли Юэ (имя человека)</p>
+                    </div>
+                </div>
+                <div class="text-block">
+                    <h4>课文二: 在教室 (Текст 2: В классе)</h4>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">A: 你是老师吗？</p><p class="pinyin-text">Nǐ shì lǎoshī ma?</p></div>
+                        <div class="translation-block"><p class="russian-translation">Вы учитель?</p></div>
+                    </div>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">B: 我不是老师，我是学生。</p><p class="pinyin-text">Wǒ bú shì lǎoshī, wǒ shì xuésheng.</p></div>
+                        <div class="translation-block"><p class="russian-translation">Я не учитель, я студент.</p></div>
+                    </div>
+                    <div class="new-words-simple">
+                        <p><strong>生词 (Новые слова):</strong></p>
+                        <p>5. 是 (shì) <span class="pos">гл.</span> быть, являться</p>
+                        <p>6. 老师 (lǎoshī) <span class="pos">сущ.</span> учитель</p>
+                        <p>7. 吗 (ma) <span class="pos">част.</span> (вопросительная частица)</p>
+                        <p>8. 学生 (xuésheng) <span class="pos">сущ.</span> студент, ученик</p>
+                    </div>
+                </div>
+                 <div class="text-block">
+                    <h4>课文三: 在学校 (Текст 3: В школе)</h4>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">A: 你是中国人吗？</p><p class="pinyin-text">Nǐ shì Zhōngguó rén ma?</p></div>
+                        <div class="translation-block"><p class="russian-translation">Ты китаец?</p></div>
+                    </div>
+                    <div class="dialogue-entry">
+                        <div class="source-language"><p class="chinese-text">B: 我不是中国人，我是美国人。</p><p class="pinyin-text">Wǒ bú shì Zhōngguó rén, wǒ shì Měiguó rén.</p></div>
+                        <div class="translation-block"><p class="russian-translation">Я не китаец, я американец.</p></div>
+                    </div>
+                    <div class="new-words-simple">
+                        <p><strong>生词 (Новые слова):</strong></p>
+                        <p>9. 人 (rén) <span class="pos">сущ.</span> человек, личность</p>
+                        <p><strong>专有名词 (Имена собственные):</strong></p>
+                        <p>2. 中国 (Zhōngguó) <span class="pos"></span> Китай</p>
+                        <p>3. 美国 (Měiguó) <span class="pos"></span> США (Соединённые Штаты Америки)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h3>注释 (Примечания)</h3>
+                <div class="notes-block">
+                    <h4>1. 疑问代词“什么” <span class="notes-subtitle">(Вопросительное местоимение «什么»)</span></h4>
+                    <p>Вопросительное местоимение «什么» используется в вопросительных предложениях, служа как сам вопрос или вместе с последующим именным элементом. Например:</p>
+                    <ol class="example-sentences">
+                        <li>你叫什么名字？ (Как тебя зовут?)</li>
+                        <li>这(zhè, это)是什么？ (Что это?)</li>
+                        <li>这(zhè, это)是什么书(shū, книга)？ (Какая это книга?)</li>
+                    </ol>
+                </div>
+                <div class="notes-block">
+                    <h4>2. “是”字句 <span class="notes-subtitle">(Предложение с «是»)</span></h4>
+                    <p>Предложение с «是» — это определительное предложение, указывающее, чему кто-то или что-то равно или к чему принадлежит. Отрицательное предложение образуется добавлением отрицательного наречия «不» перед «是». Например:</p>
+                    <table class="grammar-table">
+                        <thead><tr><th>Подлежащее</th><th>(不) 是</th><th>Сказуемое (Сущ./Именная группа)</th></tr></thead>
                         <tbody>
-                            <tr><td>nǐ (你)</td><td>+</td><td>hǎo (好)</td><td>→</td><td>ní hǎo</td></tr>
-                            <tr><td>kě (可)</td><td>+</td><td>yǐ (以)</td><td>→</td><td>ké yǐ</td></tr>
-                            <tr><td>fǔ (辅)</td><td>+</td><td>dǎo (导)</td><td>→</td><td>fú dǎo</td></tr>
+                            <tr><td>李月</td><td>是</td><td>老师。</td></tr>
+                            <tr><td>我</td><td>是</td><td>美国人。</td></tr>
+                            <tr><td>我</td><td>不是</td><td>老师。</td></tr>
                         </tbody>
                     </table>
                 </div>
-
-                <!-- Pinyin Reading Practice -->
-                 <div class="pinyin-block">
-                    <h4>朗读下列词语，注意第三声音节的读音 <span class="pinyin-subtitle">(Прочитайте следующие слова вслух, обращая внимание на изменение тона слогов третьего тона)</span></h4>
-                    <ul class="pinyin-list word-reading-practice">
-                        <li>nǐ hǎo</li><li>kěyǐ</li><li>fǔdǎo</li><li>xiǎojiě</li>
-                        <li>kǒuyǔ</li><li>yǔfǎ</li><li>Fǎyǔ</li><li>tǎohǎo</li>
-                        <li>liǎojiě</li><li>yǒuhǎo</li><li>yǔsǎn</li><li>shǒubiǎo</li>
-                    </ul>
+                <div class="notes-block">
+                    <h4>3. 用“吗”的疑问句 <span class="notes-subtitle">(Вопросительные предложения с «吗»)</span></h4>
+                    <p>Частица «吗» указывает на вопросительное наклонение. Когда «吗» добавляется в конец повествовательного предложения, оно превращается в вопрос. Например:</p>
+                     <table class="grammar-table">
+                        <thead><tr><th>Подлежащее</th><th>Сказуемое (Глагол)</th><th>Сказуемое (Сущ./Именная группа)</th><th>吗？</th></tr></thead>
+                        <tbody>
+                            <tr><td>你</td><td>是</td><td>美国人</td><td>吗？</td></tr>
+                            <tr><td>你</td><td>是</td><td>中国人</td><td>吗？</td></tr>
+                            <tr><td>你</td><td>是</td><td>老师</td><td>吗？</td></tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div> <!-- End Pinyin Section -->
-        </div> <!-- End Lesson 1 Content -->
+            </div>
 
-        <!-- More lessons can be added here following the same structure -->
+            <div class="lesson-section">
+                <h3>练习 (Упражнения)</h3>
+                <div class="exercise-block">
+                    <h4>1. 分角色朗读课文 <span class="exercise-subtitle">(Разыграйте диалоги по ролям.)</span></h4>
+                    <p>(Это упражнение предполагает устную отработку диалогов из раздела "课文".)</p>
+                </div>
+                 <div class="exercise-block">
+                    <h4>2. 根据实际情况回答问题 <span class="exercise-subtitle">(Ответьте на вопросы в соответствии с реальной ситуацией.)</span></h4>
+                    <ol class="question-list">
+                        <li>你叫什么名字？ (Nǐ jiào shénme míngzi?)</li>
+                        <li>你是中国人吗？ (Nǐ shì Zhōngguó rén ma?)</li>
+                        <li>你是美国人吗？ (Nǐ shì Měiguó rén ma?)</li>
+                        <li>你是老师吗？ (Nǐ shì lǎoshī ma?)</li>
+                        <li>你是学生吗？ (Nǐ shì xuésheng ma?)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="lesson-section">
+                <h3>拼音 (Пиньинь)</h3>
+                <div class="pinyin-block">
+                    <h4>1. 发音辨析：声母j, q, x 和 z, c, s <span class="pinyin-subtitle">(Различение произношения: инициали j, q, x и z, c, s)</span></h4>
+                    <p>j, q, x – это палатальные согласные. Поверхность языка касается твёрдого нёба при произнесении j и q. В то время как q сопровождается сильным потоком воздуха, j – нет. При произнесении x поверхность языка приближается к твёрдому нёбу, не касаясь его, оставляя щель между ними.</p>
+                    <p>z, c, s – это дентальные согласные. При произнесении z и c кончик языка касается внутренней поверхности верхних зубов и сразу же отходит от неё, образуя щель. z произносится без сильного потока воздуха, в то время как c – с заметным потоком воздуха. При произнесении s кончик языка остаётся на некотором расстоянии от внутренней поверхности верхних зубов на всём протяжении, оставляя щель для прохождения потока воздуха.</p>
+                    <p><strong>Прослушайте запись и прочитайте вслух, обращая внимание на различия между инициалями:</strong></p>
+                    <p>j, q, x:</p>
+                    <ul class="pinyin-list word-reading-practice"><li>xiūxi</li><li>jíjǐ</li><li>jíqǐ</li><li>xiǎoqū</li><li>xìngqù</li><li>xiāngjiāo</li><li>xīngqī</li><li>jíxù</li></ul>
+                    <p>z, c, s:</p>
+                    <ul class="pinyin-list word-reading-practice"><li>xǐ zǎo</li><li>dǎsǎo</li><li>sān cì</li><li>zìjǐ</li><li>zuótiān</li><li>zǎoshang</li><li>cāochǎng</li><li>Hànzì</li></ul>
+                </div>
+                 <div class="pinyin-block">
+                    <h4>2. 发音辨析：韵母i, u, ü <span class="pinyin-subtitle">(Различение произношения: финали i, u, ü)</span></h4>
+                    <p>Финали i и ü имеют одинаковое место артикуляции, но произносятся с губами разной формы. При произнесении i губы должны быть расслаблены; при произнесении ü губы должны быть округлены. Чтобы отработать ü, можно сначала произнести i, затем, не меняя положения языка, округлить губы для произнесения ü.</p>
+                    <p>И u, и ü произносятся с округлёнными губами. Но при произнесении u язык находится в задней позиции, кончик языка отодвинут от внутренней поверхности нижних зубов; при произнесении ü язык находится в передней позиции, кончик языка прижат к внутренней поверхности нижних зубов, а задняя часть языка должна быть отведена назад для правильного произнесения звука.</p>
+                </div>
+                 <div class="pinyin-block">
+                    <h4>3. “不”的变调 <span class="pinyin-subtitle">(Изменение тона «不»)</span></h4>
+                    <p><strong>(1) «不» в сочетании со слогами первого, второго и третьего тонов не изменяет свой тон:</strong></p>
+                    <ul class="pinyin-list word-reading-practice"><li>bù chī (не есть)</li><li>bù xíng (нельзя/не пойдёт)</li><li>bù hǎo (нехорошо)</li><li>bù hē (не пить)</li><li>bù néng (не мочь)</li><li>bù xiǎng (не хотеть)</li></ul>
+                    <p><strong>(2) «不» перед слогом четвёртого тона изменяется на второй тон:</strong></p>
+                    <ul class="pinyin-list word-reading-practice"><li>bú huì (не уметь)</li><li>bú shì (не быть)</li><li>bú kàn (не смотреть)</li></ul>
+                </div>
+                <div class="pinyin-block">
+                    <h4>4. 拼音规则(2): 单韵母ü和ü开头的韵母跟j, q, x相拼的规则 <span class="pinyin-subtitle">(Правила Пиньиня (2): Сочетание финали ü или финалей, начинающихся с ü, с инициалями j, q, x)</span></h4>
+                    <p>Когда финаль ü или финали, начинающиеся с ü, сочетаются с инициалями j, q, x, две точки над ü следует опускать, например, пишется ju, qu, xu. Однако при сочетании с инициалями l, n, они по-прежнему пишутся как lü, nü.</p>
+                    <p><strong>Прослушайте запись и прочитайте вслух, обращая внимание на написание и фактическое произношение ü:</strong></p>
+                    <ul class="pinyin-list word-reading-practice"><li>ü</li><li>üe</li><li>üan</li><li>ün</li><li>ju</li><li>jue</li><li>juan</li><li>jun</li><li>qu</li><li>que</li><li>quan</li><li>qun</li><li>xu</li><li>xue</li><li>xuan</li><li>xun</li></ul>
+                </div>
+            </div>
+        </div>
 
     </div> <!-- End .main-container -->
 
-    <script src="script.js"></script> <!-- Changed from hsk1_script.js -->
+    <script src="script.js"></script>
 </body>
 </html>
