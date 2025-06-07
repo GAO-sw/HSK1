@@ -1,0 +1,251 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Light, neutral background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 850px; /* Slightly narrower for HSK content focus */
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+}
+
+.main-container > h1 {
+    color: #2c3e50; /* Dark blue-grey */
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: 600;
+    border-bottom: 2px solid #3498db; /* Blue accent */
+    padding-bottom: 10px;
+}
+
+.lesson-content {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ecf0f1; /* Light separator between lessons if multiple */
+}
+.lesson-content:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+
+.lesson-content > h2 { /* Lesson Title */
+    color: #e74c3c; /* Reddish-orange for lesson titles */
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #e74c3c;
+}
+
+.lesson-section {
+    margin-bottom: 30px;
+}
+
+.lesson-section > h3 { /* Section Titles (课文, 拼音) */
+    color: #3498db; /* Blue for section titles */
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+}
+
+/* Dialogue Styles */
+.text-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Very light grey for text blocks */
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+}
+
+.text-block h4 { /* Sub-titles like 课文一 */
+    color: #7f8c8d; /* Grey for sub-titles */
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.dialogue-entry {
+    margin-bottom: 15px;
+    cursor: pointer; /* Indicate clickable */
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+.dialogue-entry:hover {
+    background-color: #ecf0f1; /* Light hover effect */
+}
+
+.source-language p {
+    margin: 0 0 3px 0;
+}
+
+.chinese-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.pinyin-text {
+    font-size: 15px;
+    color: #8e44ad; /* Purple for Pinyin */
+    font-style: italic;
+}
+
+.translation-block {
+    display: none; /* Hidden by default */
+    margin-top: 5px;
+    padding-left: 10px;
+    border-left: 2px solid #bdc3c7; /* Light grey border for translation */
+}
+
+.russian-translation {
+    font-size: 16px;
+    color: #16a085; /* Teal for Russian */
+    font-style: italic;
+}
+
+.new-words-simple {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    font-size: 15px;
+}
+.new-words-simple p {
+    margin: 3px 0;
+}
+.new-words-simple strong {
+    color: #c0392b; /* Dark red for "New Words" title */
+}
+.new-words-simple .pos {
+    color: #777;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+
+/* Pinyin Section Styles */
+.pinyin-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #fdfefe; /* Slightly off-white */
+    border: 1px solid #e0e6ed;
+    border-radius: 5px;
+}
+
+.pinyin-block h4 {
+    color: #27ae60; /* Green for Pinyin sub-section titles */
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.pinyin-subtitle {
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.pinyin-table-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.pinyin-column {
+    width: 45%;
+}
+
+.pinyin-column h5 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2980b9; /* Blue for Initials/Finals titles */
+    font-size: 16px;
+}
+
+.pinyin-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center; /* Center items in the list */
+}
+
+.pinyin-list li {
+    background-color: #ecf0f1; /* Light grey background for items */
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: 'Times New Roman', Times, serif; /* Better for Pinyin with tones */
+    font-size: 16px;
+}
+.pinyin-list.finals-list li { /* Slightly different styling for finals if needed */
+    background-color: #e8f6f3;
+}
+
+
+.tones-example {
+    margin: 15px 0;
+    padding-left: 10px;
+}
+.tones-example p {
+    margin: 5px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pinyin-list.tone-practice li {
+    min-width: 30px; /* Ensure consistent width for single characters */
+    text-align: center;
+}
+
+.syllable-table, .tone-sandhi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.syllable-table th, .syllable-table td,
+.tone-sandhi-table th, .tone-sandhi-table td {
+    border: 1px solid #bdc3c7; /* Light grey borders */
+    padding: 8px;
+    text-align: center;
+}
+
+.syllable-table th {
+    background-color: #dde5ed; /* Light blue header */
+    font-weight: 500;
+}
+.tone-sandhi-table td {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 15px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 3px solid #95a5a6;
+    border-radius: 0 3px 3px 0;
+}
+
+.pinyin-list.word-reading-practice li {
+    background-color: #fef9e7; /* Light yellow for word practice */
+    padding: 6px 12px;
+}
