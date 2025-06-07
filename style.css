@@ -1,7 +1,7 @@
 /* style.css */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6; /* Light, neutral background */
+    background-color: #f4f7f6;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -19,7 +19,7 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.07);
 }
 
-.main-container > h1 { /* HSK1 Course Title */
+.main-container > h1 {
     color: #2c3e50; 
     text-align: center;
     margin-bottom: 25px;
@@ -64,7 +64,7 @@ body {
 
 
 .lesson-content {
-    display: none; /* Hidden by default, JS will show the active one */
+    display: none; 
     margin-bottom: 40px;
     padding-bottom: 20px;
     border-bottom: 1px solid #ecf0f1;
@@ -73,12 +73,12 @@ body {
     border-bottom: none;
     margin-bottom: 0;
 }
-.lesson-content.active-content { /* Class to show the current lesson */
+.lesson-content.active-content { 
     display: block;
 }
 
 
-.lesson-content > h2 { /* Lesson Title */
+.lesson-content > h2 { 
     color: #e74c3c; 
     font-size: 24px;
     margin-top: 0;
@@ -92,10 +92,10 @@ body {
     margin-bottom: 30px;
 }
 
-.lesson-section > h3 { /* Section Titles (课文, 拼音, 注释, 练习) */
+.lesson-section > h3 { 
     color: #3498db; 
     font-size: 20px;
-    margin-top: 20px; /* Add some top margin for H3 */
+    margin-top: 20px;
     margin-bottom: 20px;
     border-left: 4px solid #3498db;
     padding-left: 10px;
@@ -222,7 +222,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    justify-content: flex-start; /* Align items to the start */
+    justify-content: flex-start; 
 }
 
 .pinyin-list li {
@@ -237,20 +237,11 @@ body {
 }
 
 
-.tones-example {
+.tones-example, .neutral-tone-examples, .erhua-examples { /* Grouped similar example blocks */
     margin: 15px 0;
     padding-left: 10px;
 }
-.tones-example p {
-    margin: 5px 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.neutral-tone-examples {
-    margin: 15px 0;
-    padding-left: 10px;
-}
-.neutral-tone-examples p {
+.tones-example p, .neutral-tone-examples p, .erhua-examples p {
     margin: 5px 0;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -260,7 +251,7 @@ body {
     text-align: center;
 }
 
-.syllable-table, .tone-sandhi-table, .grammar-table { /* Added .grammar-table */
+.syllable-table, .tone-sandhi-table, .grammar-table, .number-table, .syllable-dividing-table { /* Grouped all tables */
     width: 100%;
     border-collapse: collapse;
     margin: 15px 0;
@@ -269,32 +260,38 @@ body {
 
 .syllable-table th, .syllable-table td,
 .tone-sandhi-table th, .tone-sandhi-table td,
-.grammar-table th, .grammar-table td { /* Added .grammar-table */
+.grammar-table th, .grammar-table td,
+.number-table th, .number-table td, /* Added .number-table */
+.syllable-dividing-table th, .syllable-dividing-table td { /* Added .syllable-dividing-table */
     border: 1px solid #bdc3c7; 
     padding: 8px;
     text-align: center;
 }
 
-.syllable-table th, .grammar-table th { /* Added .grammar-table */
+.syllable-table th, .grammar-table th, .number-table th, .syllable-dividing-table th { /* Grouped table headers */
     background-color: #dde5ed; 
     font-weight: 500;
 }
 .tone-sandhi-table td {
     font-family: 'Times New Roman', Times, serif;
 }
+.number-table td { /* Specific style for number table if needed */
+    font-family: 'Consolas', 'Monaco', monospace;
+}
 
-.note, .notes-block, .exercise-block { /* Grouped similar blocks */
-    font-size: 15px; /* Adjusted for notes */
-    color: #555; /* Darker grey for notes text */
+
+.note, .notes-block, .exercise-block { 
+    font-size: 15px; 
+    color: #555; 
     margin-top: 15px;
     margin-bottom: 20px;
     background-color: #f9f9f9;
     padding: 15px;
-    border-left: 4px solid #95a5a6; /* More prominent border */
+    border-left: 4px solid #95a5a6; 
     border-radius: 0 4px 4px 0;
 }
-.notes-block h4, .exercise-block h4 { /* Sub-titles within Notes/Exercises */
-    color: #34495e; /* Darker blue-grey */
+.notes-block h4, .exercise-block h4 { 
+    color: #34495e; 
     font-size: 17px;
     margin-top: 0;
     margin-bottom: 10px;
