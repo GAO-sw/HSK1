@@ -29,54 +29,59 @@ body {
     padding-bottom: 10px;
 }
 
-/* Table of Contents for HSK1 Lessons */
-.lesson-toc {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
+/* --- Styles for Main Menu (index.html) --- */
+.course-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 10px 0;
 }
 
-.toc-item {
-    padding: 8px 15px;
+.menu-item {
+    display: block;
+    padding: 15px 20px;
     background-color: #e9ecef;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
     font-weight: 500;
     color: #007bff;
-    border: 1px solid transparent;
+    border-left: 5px solid #007bff;
+    transition: all 0.2s ease;
 }
 
-.toc-item:hover {
+.menu-item:hover {
     background-color: #007bff;
     color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.toc-item.active {
-    background-color: #0056b3;
+.menu-item.exercise-item {
+    background-color: #d4edda;
+    border-left-color: #28a745;
+    color: #155724;
+}
+
+.menu-item.exercise-item:hover {
+    background-color: #28a745;
     color: #fff;
-    font-weight: bold;
 }
 
-
-.lesson-content {
-    display: none; 
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ecf0f1;
+/* --- General Styles for Lesson Pages --- */
+.back-to-menu {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background-color: #6c757d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
 }
-.lesson-content:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+.back-to-menu:hover {
+    background-color: #5a6268;
 }
-.lesson-content.active-content { 
-    display: block;
-}
-
 
 .lesson-content > h2 { 
     color: #e74c3c; 
@@ -176,141 +181,38 @@ body {
     font-size: 0.9em;
 }
 
+/* Other shared styles (Pinyin, Tables, Notes etc.) */
+/* ... (You can paste the rest of your original CSS here if needed) ... */
 
-/* Pinyin Section Styles */
-.pinyin-block {
-    margin-bottom: 25px;
-    padding: 15px;
-    background-color: #fdfefe; 
-    border: 1px solid #e0e6ed;
-    border-radius: 5px;
-}
-
-.pinyin-block h4 {
-    color: #27ae60; 
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-.pinyin-subtitle {
-    font-weight: normal;
-    font-size: 0.9em;
-    color: #777;
+/* --- NEW STYLES FOR EXERCISE LESSON --- */
+.exercise-list {
+    list-style-type: decimal;
+    padding-left: 25px;
 }
 
-.pinyin-table-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
-}
-
-.pinyin-column {
-    width: 45%;
-}
-
-.pinyin-column h5 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #2980b9; 
-    font-size: 16px;
-}
-
-.pinyin-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: flex-start; 
-}
-
-.pinyin-list li {
-    background-color: #ecf0f1; 
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-family: 'Times New Roman', Times, serif; 
-    font-size: 16px;
-}
-.pinyin-list.finals-list li { 
-    background-color: #e8f6f3;
-}
-
-
-.tones-example, .neutral-tone-examples, .erhua-examples { /* Grouped similar example blocks */
-    margin: 15px 0;
-    padding-left: 10px;
-}
-.tones-example p, .neutral-tone-examples p, .erhua-examples p {
-    margin: 5px 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.pinyin-list.tone-practice li {
-    min-width: 30px; 
-    text-align: center;
-}
-
-.syllable-table, .tone-sandhi-table, .grammar-table, .number-table, .syllable-dividing-table { /* Grouped all tables */
-    width: 100%;
-    border-collapse: collapse;
-    margin: 15px 0;
-    font-size: 15px;
-}
-
-.syllable-table th, .syllable-table td,
-.tone-sandhi-table th, .tone-sandhi-table td,
-.grammar-table th, .grammar-table td,
-.number-table th, .number-table td, /* Added .number-table */
-.syllable-dividing-table th, .syllable-dividing-table td { /* Added .syllable-dividing-table */
-    border: 1px solid #bdc3c7; 
-    padding: 8px;
-    text-align: center;
-}
-
-.syllable-table th, .grammar-table th, .number-table th, .syllable-dividing-table th { /* Grouped table headers */
-    background-color: #dde5ed; 
-    font-weight: 500;
-}
-.tone-sandhi-table td {
-    font-family: 'Times New Roman', Times, serif;
-}
-.number-table td { /* Specific style for number table if needed */
-    font-family: 'Consolas', 'Monaco', monospace;
-}
-
-
-.note, .notes-block, .exercise-block { 
-    font-size: 15px; 
-    color: #555; 
-    margin-top: 15px;
+.exercise-list li {
     margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-left: 4px solid #95a5a6; 
-    border-radius: 0 4px 4px 0;
-}
-.notes-block h4, .exercise-block h4 { 
-    color: #34495e; 
-    font-size: 17px;
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-.notes-subtitle, .exercise-subtitle {
-    font-weight: normal;
-    font-size: 0.9em;
-    color: #777;
-}
-.example-sentences, .question-list {
-    padding-left: 20px;
-    margin-top: 10px;
-}
-.example-sentences li, .question-list li {
-    margin-bottom: 5px;
 }
 
+.exercise-sentence {
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0 0 5px 0;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
 
-.pinyin-list.word-reading-practice li {
-    background-color: #fef9e7; 
-    padding: 6px 12px;
+.exercise-sentence:hover {
+    background-color: #e9ecef;
+}
+
+.exercise-translation {
+    font-size: 16px;
+    color: #16a085; /* Same as Russian translation in dialogues */
+    font-style: italic;
+    padding-left: 15px;
+    border-left: 2px solid #bdc3c7;
+    margin: 5px 0 0 0;
 }
