@@ -281,46 +281,49 @@ body {
 
 /* style.css 末尾 */
 
-/* --- 课文图文并排样式 (无移动端适配) --- */
+/* --- 课文图文并排样式 (最新版：图片放大 + 无裁切) --- */
 
-/* 布局容器：横向排列 */
+/* 布局容器 */
 .lesson-row {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* 顶部对齐 */
-    gap: 20px;
+    /* 改为 center 可以在垂直方向居中，如果您喜欢顶部对齐改为 flex-start */
+    align-items: flex-start; 
+    gap: 20px; /* 文字和图片之间的间距 */
+    margin-bottom: 30px; /* 增加段落间距 */
 }
 
 /* 左侧：文字区域 */
 .text-column {
-    flex: 1; 
+    flex: 1; /* 自动占据剩余空间 */
 }
 
-/* 右侧：图片区域容器 */
+/* 右侧：图片区域 */
 .image-column {
-    width: 320px; /* 固定宽度，确保能放下两列图片 */
-    flex-shrink: 0;
+    /* 关键修改：改为占用 48% 的宽度 (接近一半)，让图片更大 */
+    flex: 0 0 48%; 
+    max-width: 500px; /* 设置一个上限，防止在大屏幕上过于巨大 */
 }
 
 /* 4张图片的网格布局 (2x2) */
 .image-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 两列等宽 */
-    gap: 8px; /* 图片之间的间隙 */
+    gap: 10px; /* 图片间隙 */
 }
 
 /* 图片样式 */
 .lesson-illustration {
     width: 100%;
-    height: 110px; /* 固定高度，防止参差不齐 */
-    object-fit: cover; /* 裁剪图片以填满方格，不变形 */
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    height: auto; /* 关键修改：取消固定高度，让图片按比例显示，不会被裁切 */
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #eee; /* 边框淡一点 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     background-color: #fff;
     transition: transform 0.2s;
 }
 
-/* 鼠标悬停稍微放大效果（可选） */
 .lesson-illustration:hover {
-    transform: scale(1.05);
+    transform: scale(1.03); /* 鼠标悬停轻微放大 */
+    z-index: 1;
 }
