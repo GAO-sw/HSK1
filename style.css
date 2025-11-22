@@ -278,3 +278,34 @@ body {
     color: #888;
     font-style: italic;
 }
+
+/* --- 课文图文并排样式 --- */
+
+/* 布局容器：横向排列 */
+.lesson-row {
+    display: flex;
+    justify-content: space-between; /* 左右两端对齐 */
+    align-items: flex-start; /* 顶部对齐 */
+    gap: 25px; /* 文字和图片之间的间距 */
+}
+
+/* 左侧：文字区域 */
+.text-column {
+    flex: 1; /* 占据剩余空间 */
+}
+
+/* 右侧：图片区域 */
+.image-column {
+    width: 320px; /* 固定图片区域宽度，你可以根据图片实际大小修改这里 */
+    flex-shrink: 0; /* 禁止压缩图片区域宽度 */
+}
+
+/* 图片本身样式 */
+.lesson-illustration {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    background-color: #fff;
+}
